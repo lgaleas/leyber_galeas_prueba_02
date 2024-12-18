@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Nombres (verde - habilitado en primera entrada) -->
+    <EditText
+        android:id="@+id/etNombresD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres:"
+        android:enabled="true"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <!-- Apellidos (verde - habilitado en primera entrada) -->
+    <EditText
+        android:id="@+id/etApellidosD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos:"
+        android:enabled="true"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <!-- Dividendo (gris) -->
+    <EditText
+        android:id="@+id/etDividendoD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dividendo:"
+        android:enabled="false"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <!-- Divisor (gris) -->
+    <EditText
+        android:id="@+id/etDivisorD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Divisor:"
+        android:enabled="false"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <!-- Numero (gris) -->
+    <EditText
+        android:id="@+id/etNumeroD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero:"
+        android:enabled="false"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <!-- Botón Siguiente (verde) -->
+        <Button
+            android:id="@+id/btnSiguienteD"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Siguiente"
+            android:enabled="true"
+            android:background="#00FF00"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Espacio vertical -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <!-- Botón Cerrar (gris/amarillo luego) -->
+        <Button
+            android:id="@+id/btnCerrarD"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Cerrar"
+            android:enabled="false"
+            android:background="#808080"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">leyber_galeas_prueba_02</string>
+    <string name="nombres">Nombres:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="dividendo">Dividendo:</string>
+    <string name="divisor">Divisor:</string>
 </resources>

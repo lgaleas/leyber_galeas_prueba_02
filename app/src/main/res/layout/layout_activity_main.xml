@@ -1,12 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp">
+
+  <EditText
+      android:id="@+id/etNombresU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/nombres"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/etApellidosU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/apellidos"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/etDividendoU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/dividendo"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/etDivisorU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/divisor"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/etParteEnteraU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Parte Entera:"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/etResiduoU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Residuo:"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/etInvertidoU"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Num. Invertido:"
+      android:enabled="false"/>
+
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="20dp" />
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:layout_marginTop="20dp">
+
+    <!-- Botón Siguiente (verde) -->
+    <Button
+        android:id="@+id/btnSiguienteU"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Siguiente"
+        android:enabled="true"
+        android:background="#00FF00"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btnMostrarResultadosU"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Mostrar Resultados"
+        android:enabled="false"
+        android:background="#808080"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+  </LinearLayout>
 
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
