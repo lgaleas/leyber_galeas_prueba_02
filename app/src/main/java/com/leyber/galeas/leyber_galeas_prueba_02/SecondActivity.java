@@ -40,8 +40,6 @@ public class SecondActivity extends AppCompatActivity {
                 i.putExtra("nombres", nombres);
                 i.putExtra("apellidos", apellidos);
                 startActivityForResult(i,200);
-            } else {
-
             }
         });
 

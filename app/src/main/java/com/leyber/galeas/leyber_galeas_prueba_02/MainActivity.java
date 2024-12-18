@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText etNombresU, etApellidosU, etDividendoU, etDivisorU, etParteEnteraU, etResiduoU, etInvertidoU;
     private Button btnSiguienteU, btnMostrarResultadosU;
 
-    private final boolean regresoConDatos = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode,int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 100 && resultCode == RESULT_OK && data != null){
-            // Recibimos toda la info final
             String nombres = data.getStringExtra("nombres");
             String apellidos = data.getStringExtra("apellidos");
             int dividendo = data.getIntExtra("dividendo",0);
@@ -61,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             etResiduoU.setText(String.valueOf(residuo));
             etInvertidoU.setText(String.valueOf(invertido));
 
-            // Ahora se habilita el botón "Mostrar Resultados" (amarillo)
             btnMostrarResultadosU.setEnabled(true);
 
         }
