@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:autofillHints=""
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,8 +11,10 @@
       android:id="@+id/etNombresU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:autofillHints=""
+      android:enabled="false"
       android:hint="@string/nombres"
-      android:enabled="false"/>
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
@@ -21,8 +24,10 @@
       android:id="@+id/etApellidosU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:autofillHints=""
+      android:enabled="false"
       android:hint="@string/apellidos"
-      android:enabled="false"/>
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
@@ -32,19 +37,23 @@
       android:id="@+id/etDividendoU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:autofillHints=""
+      android:enabled="false"
       android:hint="@string/dividendo"
-      android:enabled="false"/>
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
-      android:layout_height="20dp" />
+      android:layout_height="20dp"
+      android:autofillHints="" />
 
   <EditText
       android:id="@+id/etDivisorU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:enabled="false"
       android:hint="@string/divisor"
-      android:enabled="false"/>
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
@@ -54,8 +63,9 @@
       android:id="@+id/etParteEnteraU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:hint="Parte Entera:"
-      android:enabled="false"/>
+      android:enabled="false"
+      android:hint="@string/parte_entera"
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
@@ -65,19 +75,22 @@
       android:id="@+id/etResiduoU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:hint="Residuo:"
-      android:enabled="false"/>
+      android:enabled="false"
+      android:hint="@string/residuo"
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
-      android:layout_height="20dp" />
+      android:layout_height="20dp"
+      android:autofillHints="" />
 
   <EditText
       android:id="@+id/etInvertidoU"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:hint="Num. Invertido:"
-      android:enabled="false"/>
+      android:enabled="false"
+      android:hint="@string/num_invertido"
+      android:minHeight="48dp" />
 
   <Space
       android:layout_width="wrap_content"
@@ -95,10 +108,10 @@
         android:id="@+id/btnSiguienteU"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:text="Siguiente"
-        android:enabled="true"
         android:background="#00FF00"
-        android:textColor="#FFFFFF"
+        android:enabled="true"
+        android:text="@string/siguiente"
+        android:textColor="#616161"
         android:textSize="18sp" />
 
     <Space
@@ -109,7 +122,7 @@
         android:id="@+id/btnMostrarResultadosU"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:text="Mostrar Resultados"
+        android:text="@string/mostrar_resultados"
         android:enabled="false"
         android:background="#808080"
         android:textColor="#FFFFFF"

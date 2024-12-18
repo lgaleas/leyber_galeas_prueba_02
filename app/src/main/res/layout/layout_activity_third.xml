@@ -11,8 +11,9 @@
         android:id="@+id/etNombresT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombres:"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:hint="@string/nombres"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -23,8 +24,9 @@
         android:id="@+id/etApellidosT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Apellidos:"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:hint="@string/apellidos"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -35,9 +37,10 @@
         android:id="@+id/etDividendoT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Dividendo:"
         android:enabled="true"
-        android:inputType="numberSigned"/>
+        android:hint="@string/dividendo"
+        android:inputType="numberSigned"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -48,9 +51,10 @@
         android:id="@+id/etDivisorT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Divisor:"
         android:enabled="true"
-        android:inputType="numberSigned"/>
+        android:hint="@string/divisor"
+        android:inputType="numberSigned"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -61,9 +65,10 @@
         android:id="@+id/etNumeroT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numero:"
         android:enabled="true"
-        android:inputType="numberSigned"/>
+        android:hint="@string/numero"
+        android:inputType="numberSigned"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -81,7 +86,7 @@
             android:id="@+id/btnCerrarT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cerrar"
+            android:text="@string/cerrar"
             android:enabled="true"/>
     </LinearLayout>
 

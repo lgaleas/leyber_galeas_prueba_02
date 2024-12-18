@@ -11,8 +11,9 @@
         android:id="@+id/etNombresD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombres:"
-        android:enabled="true"/>
+        android:enabled="true"
+        android:hint="@string/nombres"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -23,8 +24,11 @@
         android:id="@+id/etApellidosD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Apellidos:"
-        android:enabled="true"/>
+        android:autofillHints=""
+        android:enabled="true"
+        android:hint="@string/apellidos"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A" />
 
     <Space
         android:layout_width="wrap_content"
@@ -35,8 +39,9 @@
         android:id="@+id/etDividendoD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Dividendo:"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:hint="@string/dividendo"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -47,8 +52,9 @@
         android:id="@+id/etDivisorD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Divisor:"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:hint="@string/divisor"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -59,8 +65,9 @@
         android:id="@+id/etNumeroD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numero:"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:hint="@string/numero"
+        android:minHeight="48dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -78,10 +85,10 @@
             android:id="@+id/btnSiguienteD"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="Siguiente"
-            android:enabled="true"
             android:background="#00FF00"
-            android:textColor="#FFFFFF"
+            android:enabled="true"
+            android:text="@string/siguiente"
+            android:textColor="#616161"
             android:textSize="18sp" />
 
         <!-- Espacio vertical -->
@@ -94,7 +101,7 @@
             android:id="@+id/btnCerrarD"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="Cerrar"
+            android:text="@string/cerrar"
             android:enabled="false"
             android:background="#808080"
             android:textColor="#FFFFFF"
